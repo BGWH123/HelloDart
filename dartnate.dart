@@ -1,4 +1,4 @@
-//import 'dart:math';
+import 'dart:math';
 //import 'package:test/test.dart';
 //import 'path/to/my_other_file.dart';
 //变量 *(https://dart.cn/samples#variables)
@@ -60,26 +60,26 @@ int fibonacci(int n){
 
 //类
 //https://dart.cn/samples#classes
-class Spacecraft{
-    String name;
-    DateTime?launuchDate;
-    int?get launchYear=>launuchDate?.year;
-    Spacecraft(this.name,tihs.launuchDate){
-        //初始化
-    }
-    Spacecraft.unlaunched(String name)this(name,null);
-    void describe(){
-        print("spacecraft:$name");
-        var launchDate = this.launchDate;
-    if (launchDate != null) {
-      int years = DateTime.now().difference(launchDate).inDays ~/ 365;
-      print('Launched: $launchYear ($years years ago)');
-    } else {
-      print('Unlaunched');
-    }
-    }
+// class Spacecraft{
+//     String name;
+//     DateTime?launuchDate;
+//     int?get launchYear=>launuchDate?.year;
+//     Spacecraft(this.name,tihs.launuchDate){
+//         //初始化
+//     }
+//     Spacecraft.unlaunched(String name)this(name,null);
+//     void describe(){
+//         print("spacecraft:$name");
+//         var launchDate = this.launchDate;
+//     if (launchDate != null) {
+//       int years = DateTime.now().difference(launchDate).inDays ~/ 365;
+//       print('Launched: $launchYear ($years years ago)');
+//     } else {
+//       print('Unlaunched');
+//     }
+//     }
 
-}
+// }
 
 void main (List<String>args){
    // variables();
@@ -89,6 +89,7 @@ void main (List<String>args){
   //flybyObjects.where((name) => name.contains('turn')).forEach(print);
    // var result=fibonacci(20);      20的斐波拉数列
    // print(result);
-   var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5));
-voyager.describe();
+    // var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5));
+     // voyager.describe();
+    
 }
